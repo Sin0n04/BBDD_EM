@@ -1,0 +1,10 @@
+@crearpersona
+@crearasociacion
+@crearsocio
+@creartrabajador
+@crearasalariado
+@crearvoluntario
+@crearproyecto
+@crearasosoc
+@crearpropro
+@crearprotra
