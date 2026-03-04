@@ -1,0 +1,15 @@
+ACCEPT NUMBER3 PROMPT ' INTRODUCE UN NUMERO'
+
+DECLARE
+    NUM NUMBER(4):= &NUMBER3;
+
+BEGIN
+    IF NUM MOD 2 <> 0 THEN
+        NUM := NUM + 1;
+    END IF;
+    WHILE NUM <= 1000 LOOP
+            DBMS_OUTPUT.PUT_LINE(NUM);
+            NUM := NUM + 2;
+        END LOOP;
+END;
+/

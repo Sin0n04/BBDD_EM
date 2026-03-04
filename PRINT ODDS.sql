@@ -1,0 +1,16 @@
+ACCEPT NUMERO1 PROMPT ' INTRODUCE UN NUMERO'
+DECLARE
+    NUM NUMBER(4):= &NUMERO1;
+    AUX NUMBER(4):= 1111;
+BEGIN
+
+    IF NUM MOD 2 = 0 THEN
+       AUX := 1000;
+    END IF;
+
+     WHILE NUM < AUX LOOP
+            DBMS_OUTPUT.PUT_LINE(NUM);
+            NUM := NUM + 2;
+        END LOOP;
+END;
+/
