@@ -1,8 +1,7 @@
-ACCEPT NOMBRE PROMPT 'Ingrese su nombre: '
+ACCEPT NOMBRE PROMPT 'Ingrese su nombre: '  
 DECLARE
-    nombre VARCHAR2(30):= '&NOMBRE';
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('Hola, ' || nombre || '!');
-
+    NOM VARCHAR2(50);
+BEGIN  
+  NOM := '&NOMBRE';
+  DBMS_OUTPUT.PUT_LINE('Hola, ' || NOM || '! Bienvenido a Oracle SQL.');  
 END;
-/
