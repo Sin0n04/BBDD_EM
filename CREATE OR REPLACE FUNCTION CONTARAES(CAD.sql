@@ -1,0 +1,14 @@
+    CREATE OR REPLACE FUNCTION CONTARAES(CADENA VARCHAR2) RETURN NUMBER IS
+
+    CONT NUMBER(3) := 0;
+    BEGIN
+        FOR I IN 1..LENGTH(CADENA) LOOP
+        IF UPPER(SUBSTR(CADENA,I,1)) = 'A' THEN
+            CONT := CONT + 1;
+        END IF;
+        END LOOP;
+
+        RETURN CONT;
+
+    END;
+    /
